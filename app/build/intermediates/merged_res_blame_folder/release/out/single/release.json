@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "com.eudi.verifier.app-merged_res-44:/xml_backup_rules.xml.flat",
+        "source": "com.eudi.verifier.app-main-45:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.eudi.verifier.app-merged_res-44:/xml_data_extraction_rules.xml.flat",
+        "source": "com.eudi.verifier.app-main-45:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.eudi.verifier.app-merged_res-44:/layout_activity_qr_scan.xml.flat",
+        "source": "com.eudi.verifier.app-main-45:/layout/activity_qr_scan.xml"
+    },
+    {
+        "merged": "com.eudi.verifier.app-merged_res-44:/layout_item_credential_attribute.xml.flat",
+        "source": "com.eudi.verifier.app-main-45:/layout/item_credential_attribute.xml"
+    },
+    {
+        "merged": "com.eudi.verifier.app-merged_res-44:/drawable_ic_arrow_back.xml.flat",
+        "source": "com.eudi.verifier.app-main-45:/drawable/ic_arrow_back.xml"
+    },
+    {
+        "merged": "com.eudi.verifier.app-merged_res-44:/layout_activity_verification_result.xml.flat",
+        "source": "com.eudi.verifier.app-main-45:/layout/activity_verification_result.xml"
+    },
+    {
+        "merged": "com.eudi.verifier.app-merged_res-44:/layout_activity_main.xml.flat",
+        "source": "com.eudi.verifier.app-main-45:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.eudi.verifier.app-merged_res-44:/drawable_qr_scan_overlay.xml.flat",
+        "source": "com.eudi.verifier.app-main-45:/drawable/qr_scan_overlay.xml"
+    },
+    {
+        "merged": "com.eudi.verifier.app-merged_res-44:/drawable_card_background.xml.flat",
+        "source": "com.eudi.verifier.app-main-45:/drawable/card_background.xml"
+    },
+    {
+        "merged": "com.eudi.verifier.app-merged_res-44:/drawable_ic_verification.xml.flat",
+        "source": "com.eudi.verifier.app-main-45:/drawable/ic_verification.xml"
+    }
+]

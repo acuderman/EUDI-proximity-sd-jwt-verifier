@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.eudi.verifier.app-mergeReleaseResources-43:/layout/activity_verification_result.xml",
+        "source": "com.eudi.verifier.app-main-45:/layout/activity_verification_result.xml"
+    },
+    {
+        "merged": "com.eudi.verifier.app-mergeReleaseResources-43:/layout/activity_main.xml",
+        "source": "com.eudi.verifier.app-main-45:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.eudi.verifier.app-mergeReleaseResources-43:/layout/item_credential_attribute.xml",
+        "source": "com.eudi.verifier.app-main-45:/layout/item_credential_attribute.xml"
+    },
+    {
+        "merged": "com.eudi.verifier.app-mergeReleaseResources-43:/layout/activity_qr_scan.xml",
+        "source": "com.eudi.verifier.app-main-45:/layout/activity_qr_scan.xml"
+    }
+]

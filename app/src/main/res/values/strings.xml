@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EUDI Verifier</string>
+    <string name="start_verification">Start Verification</string>
+    <string name="view_history">View History</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="point_camera">Point camera at wallet QR code</string>
+    <string name="scanning">Scanning for QR code...</string>
+    <string name="connecting">Connecting to wallet...</string>
+    <string name="verification_result">Verification Result</string>
+    <string name="verification_successful">✓ Verification Successful</string>
+    <string name="verification_failed">✗ Verification Failed</string>
+    <string name="new_verification">New Verification</string>
+    <string name="back">Back</string>
+    <string name="credential_information">Credential Information</string>
+    <string name="verified_attributes">Verified Attributes</string>
+</resources>

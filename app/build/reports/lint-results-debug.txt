@@ -1,0 +1,405 @@
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/build.gradle:13: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk 34
+        ~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application runs on a version of Android that is more recent than
+   your targetSdkVersion specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdkVersion
+   is less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/AndroidManifest.xml:19: Warning: Attribute usesPermissionFlags is only used in API level 31 and higher (current min is 26) [UnusedAttribute]
+        android:usesPermissionFlags="neverForLocation" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedAttribute":
+   This check finds attributes set in XML files that were introduced in a
+   version newer than the oldest version targeted by your application (with
+   the minSdkVersion attribute).
+
+   This is not an error; the application will simply ignore the attribute.
+   However, if the attribute is important to the appearance or functionality
+   of your application, you should consider finding an alternative way to
+   achieve the same result with only available attributes, and then you can
+   optionally create a copy of the layout in a layout-vNN folder which will be
+   used on API NN or higher where you can take advantage of the newer
+   attribute.
+
+   Note: This check does not only apply to attributes. For example, some tags
+   can be unused too, such as the new <tag> element in layouts introduced in
+   API 21.
+
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/build.gradle:42: Warning: A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.16.0 [GradleDependency]
+    implementation 'androidx.core:core-ktx:1.12.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/build.gradle:43: Warning: A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.1 [GradleDependency]
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/build.gradle:44: Warning: A newer version of com.google.android.material:material than 1.10.0 is available: 1.12.0 [GradleDependency]
+    implementation 'com.google.android.material:material:1.10.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/build.gradle:45: Warning: A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1 [GradleDependency]
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/build.gradle:46: Warning: A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.7.0 is available: 2.9.1 [GradleDependency]
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/build.gradle:47: Warning: A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.7.0 is available: 2.9.1 [GradleDependency]
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.7.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/build.gradle:48: Warning: A newer version of androidx.activity:activity-ktx than 1.8.2 is available: 1.10.1 [GradleDependency]
+    implementation 'androidx.activity:activity-ktx:1.8.2'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/build.gradle:51: Warning: A newer version of androidx.camera:camera-camera2 than 1.3.1 is available: 1.4.2 [GradleDependency]
+    implementation 'androidx.camera:camera-camera2:1.3.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/build.gradle:52: Warning: A newer version of androidx.camera:camera-lifecycle than 1.3.1 is available: 1.4.2 [GradleDependency]
+    implementation 'androidx.camera:camera-lifecycle:1.3.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/build.gradle:53: Warning: A newer version of androidx.camera:camera-view than 1.3.1 is available: 1.4.2 [GradleDependency]
+    implementation 'androidx.camera:camera-view:1.3.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/build.gradle:54: Warning: A newer version of com.google.mlkit:barcode-scanning than 17.2.0 is available: 17.3.0 [GradleDependency]
+    implementation 'com.google.mlkit:barcode-scanning:17.2.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/build.gradle:57: Warning: A newer version of com.google.code.gson:gson than 2.10.1 is available: 2.13.1 [GradleDependency]
+    implementation 'com.google.code.gson:gson:2.10.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/build.gradle:58: Warning: A newer version of com.nimbusds:nimbus-jose-jwt than 9.37.3 is available: 9.47 [GradleDependency]
+    implementation 'com.nimbusds:nimbus-jose-jwt:9.37.3'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/build.gradle:61: Warning: A newer version of org.jetbrains.kotlinx:kotlinx-coroutines-android than 1.7.3 is available: 1.10.2 [GradleDependency]
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/build.gradle:64: Warning: A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1 [GradleDependency]
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/build.gradle:65: Warning: A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1 [GradleDependency]
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/java/com/eudi/verifier/qr/QRCodeAnalyzer.kt:19: Error: This declaration is opt-in and its usage should be marked with @androidx.camera.core.ExperimentalGetImage or @OptIn(markerClass = androidx.camera.core.ExperimentalGetImage.class) [UnsafeOptInUsageError from androidx.annotation.experimental]
+        val mediaImage = imageProxy.image
+                                    ~~~~~
+
+   Explanation for issues of type "UnsafeOptInUsageError":
+   This API has been flagged as opt-in with error-level severity.
+
+   Any declaration annotated with this marker is considered part of an
+   unstable or
+   otherwise non-standard API surface and its call sites should accept the
+   opt-in
+   aspect of it by using the @OptIn annotation, using the marker annotation
+   --
+   effectively causing further propagation of the opt-in aspect -- or
+   configuring
+   the UnsafeOptInUsageError check's options for project-wide opt-in.
+
+   To configure project-wide opt-in, specify the opt-in option value in
+   lint.xml
+   as a comma-delimited list of opted-in annotations:
+
+   <lint>
+       <issue id="UnsafeOptInUsageError">
+           <option name="opt-in" value="com.foo.ExperimentalBarAnnotation" />
+       </issue>
+   </lint>
+
+   Vendor: Android Open Source Project
+   Identifier: androidx.annotation.experimental
+   Feedback: https://issuetracker.google.com/issues/new?component=459778
+
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/java/com/eudi/verifier/adapters/CredentialAttributeAdapter.kt:16: Warning: It will always be more efficient to use more specific change events if you can. Rely on notifyDataSetChanged as a last resort. [NotifyDataSetChanged]
+        notifyDataSetChanged()
+        ~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "NotifyDataSetChanged":
+   The RecyclerView adapter's onNotifyDataSetChanged method does not specify
+   what about the data set has changed, forcing any observers to assume that
+   all existing items and structure may no longer be valid. `LayoutManager`s
+   will be forced to fully rebind and relayout all visible views.
+
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/themes.xml:10: Warning: Unnecessary; SDK_INT is always >= 21 [ObsoleteSdkInt]
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+                                            ~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_qr_scan.xml:5: Warning: Possible overdraw: Root element paints background @android:color/black with a theme that also paints a background (inferred theme is @style/Theme.EUDIVerifier) [Overdraw]
+    android:background="@android:color/black">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/xml/backup_rules.xml:2: Warning: The resource R.xml.backup_rules appears to be unused [UnusedResources]
+<full-backup-content>
+^
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/colors.xml:3: Warning: The resource R.color.purple_200 appears to be unused [UnusedResources]
+    <color name="purple_200">#FFBB86FC</color>
+           ~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/colors.xml:12: Warning: The resource R.color.eudi_primary appears to be unused [UnusedResources]
+    <color name="eudi_primary">#1976D2</color>
+           ~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/colors.xml:13: Warning: The resource R.color.eudi_secondary appears to be unused [UnusedResources]
+    <color name="eudi_secondary">#FFC107</color>
+           ~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/xml/data_extraction_rules.xml:2: Warning: The resource R.xml.data_extraction_rules appears to be unused [UnusedResources]
+<data-extraction-rules>
+^
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/strings.xml:4: Warning: The resource R.string.start_verification appears to be unused [UnusedResources]
+    <string name="start_verification">Start Verification</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/strings.xml:5: Warning: The resource R.string.view_history appears to be unused [UnusedResources]
+    <string name="view_history">View History</string>
+            ~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/strings.xml:6: Warning: The resource R.string.scan_qr_code appears to be unused [UnusedResources]
+    <string name="scan_qr_code">Scan QR Code</string>
+            ~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/strings.xml:7: Warning: The resource R.string.point_camera appears to be unused [UnusedResources]
+    <string name="point_camera">Point camera at wallet QR code</string>
+            ~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/strings.xml:8: Warning: The resource R.string.scanning appears to be unused [UnusedResources]
+    <string name="scanning">Scanning for QR code...</string>
+            ~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/strings.xml:9: Warning: The resource R.string.connecting appears to be unused [UnusedResources]
+    <string name="connecting">Connecting to wallet...</string>
+            ~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/strings.xml:10: Warning: The resource R.string.verification_result appears to be unused [UnusedResources]
+    <string name="verification_result">Verification Result</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/strings.xml:11: Warning: The resource R.string.verification_successful appears to be unused [UnusedResources]
+    <string name="verification_successful">✓ Verification Successful</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/strings.xml:12: Warning: The resource R.string.verification_failed appears to be unused [UnusedResources]
+    <string name="verification_failed">✗ Verification Failed</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/strings.xml:13: Warning: The resource R.string.new_verification appears to be unused [UnusedResources]
+    <string name="new_verification">New Verification</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/strings.xml:14: Warning: The resource R.string.back appears to be unused [UnusedResources]
+    <string name="back">Back</string>
+            ~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/strings.xml:15: Warning: The resource R.string.credential_information appears to be unused [UnusedResources]
+    <string name="credential_information">Credential Information</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/strings.xml:16: Warning: The resource R.string.verified_attributes appears to be unused [UnusedResources]
+    <string name="verified_attributes">Verified Attributes</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/strings.xml:8: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="scanning">Scanning for QR code...</string>
+                            ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/values/strings.xml:9: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="connecting">Connecting to wallet...</string>
+                              ~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "TypographyEllipsis":
+   You can replace the string "..." with a dedicated ellipsis character,
+   ellipsis character (u2026, &#8230;). This can help make the text more
+   readable.
+
+   https://en.wikipedia.org/wiki/Ellipsis
+
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/java/com/eudi/verifier/VerificationResultActivity.kt:50: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            tvVerificationStatus.text = "✓ Verification Successful"
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/java/com/eudi/verifier/VerificationResultActivity.kt:54: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            tvHolderInfo.text = "Holder: ${presentation.holder ?: "Unknown"}"
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/java/com/eudi/verifier/VerificationResultActivity.kt:54: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            tvHolderInfo.text = "Holder: ${presentation.holder ?: "Unknown"}"
+                                 ~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/java/com/eudi/verifier/VerificationResultActivity.kt:61: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                tvCredentialType.text = "Credential Type: ${firstCredential.type.joinToString(", ")}"
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/java/com/eudi/verifier/VerificationResultActivity.kt:61: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                tvCredentialType.text = "Credential Type: ${firstCredential.type.joinToString(", ")}"
+                                         ~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/java/com/eudi/verifier/VerificationResultActivity.kt:74: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                tvCredentialIssuer.text = "Issued by: ${firstCredential.issuer}"
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/java/com/eudi/verifier/VerificationResultActivity.kt:74: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                tvCredentialIssuer.text = "Issued by: ${firstCredential.issuer}"
+                                           ~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/java/com/eudi/verifier/VerificationResultActivity.kt:75: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                tvIssuanceDate.text = "Issued: ${firstCredential.issuanceDate}"
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/java/com/eudi/verifier/VerificationResultActivity.kt:75: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                tvIssuanceDate.text = "Issued: ${firstCredential.issuanceDate}"
+                                       ~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/java/com/eudi/verifier/VerificationResultActivity.kt:77: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                    tvExpirationDate.text = "Expires: $it"
+                                            ~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/java/com/eudi/verifier/VerificationResultActivity.kt:77: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    tvExpirationDate.text = "Expires: $it"
+                                             ~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/java/com/eudi/verifier/VerificationResultActivity.kt:85: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            tvVerificationStatus.text = "✗ Verification Failed"
+                                         ~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/java/com/eudi/verifier/VerificationResultActivity.kt:87: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            tvHolderInfo.text = "Error: $message"
+                                ~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/java/com/eudi/verifier/VerificationResultActivity.kt:87: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            tvHolderInfo.text = "Error: $message"
+                                 ~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_main.xml:14: Warning: Hardcoded string "EUDI Verifier", should use @string resource [HardcodedText]
+        android:contentDescription="EUDI Verifier" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_main.xml:19: Warning: Hardcoded string "EUDI Verifier", should use @string resource [HardcodedText]
+        android:text="EUDI Verifier"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_main.xml:27: Warning: Hardcoded string "Verify digital identity credentials", should use @string resource [HardcodedText]
+        android:text="Verify digital identity credentials"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_main.xml:37: Warning: Hardcoded string "Start Verification", should use @string resource [HardcodedText]
+        android:text="Start Verification"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_main.xml:47: Warning: Hardcoded string "Scan QR Code", should use @string resource [HardcodedText]
+        android:text="Scan QR Code"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_main.xml:57: Warning: Hardcoded string "View History", should use @string resource [HardcodedText]
+        android:text="View History"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_main.xml:67: Warning: Hardcoded string "Ready to verify", should use @string resource [HardcodedText]
+        android:text="Ready to verify"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_qr_scan.xml:32: Warning: Hardcoded string "Back", should use @string resource [HardcodedText]
+                android:contentDescription="Back" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_qr_scan.xml:38: Warning: Hardcoded string "Scan QR Code", should use @string resource [HardcodedText]
+                android:text="Scan QR Code"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_qr_scan.xml:54: Warning: Hardcoded string "Point camera at wallet QR code", should use @string resource [HardcodedText]
+            android:text="Point camera at wallet QR code"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_qr_scan.xml:74: Warning: Hardcoded string "Scanning for QR code...", should use @string resource [HardcodedText]
+            android:text="Scanning for QR code..."
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_verification_result.xml:24: Warning: Hardcoded string "Close", should use @string resource [HardcodedText]
+                android:text="Close"
+                ~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_verification_result.xml:31: Warning: Hardcoded string "Verification Result", should use @string resource [HardcodedText]
+                android:text="Verification Result"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_verification_result.xml:46: Warning: Hardcoded string "✓ Verification Successful", should use @string resource [HardcodedText]
+            android:text="✓ Verification Successful"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_verification_result.xml:63: Warning: Hardcoded string "Credential Information", should use @string resource [HardcodedText]
+                android:text="Credential Information"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_verification_result.xml:72: Warning: Hardcoded string "Holder: John Doe", should use @string resource [HardcodedText]
+                android:text="Holder: John Doe"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_verification_result.xml:80: Warning: Hardcoded string "Credential Type: IdentityCredential", should use @string resource [HardcodedText]
+                android:text="Credential Type: IdentityCredential"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_verification_result.xml:88: Warning: Hardcoded string "Issued by: EUDI Authority", should use @string resource [HardcodedText]
+                android:text="Issued by: EUDI Authority"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_verification_result.xml:96: Warning: Hardcoded string "Issued: 2024-01-01", should use @string resource [HardcodedText]
+                android:text="Issued: 2024-01-01"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_verification_result.xml:104: Warning: Hardcoded string "Expires: 2029-01-01", should use @string resource [HardcodedText]
+                android:text="Expires: 2029-01-01"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_verification_result.xml:120: Warning: Hardcoded string "Verified Attributes", should use @string resource [HardcodedText]
+                android:text="Verified Attributes"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/activity_verification_result.xml:136: Warning: Hardcoded string "New Verification", should use @string resource [HardcodedText]
+            android:text="New Verification"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/item_credential_attribute.xml:13: Warning: Hardcoded string "Attribute Name", should use @string resource [HardcodedText]
+        android:text="Attribute Name"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app/src/main/res/layout/item_credential_attribute.xml:23: Warning: Hardcoded string "Attribute Value", should use @string resource [HardcodedText]
+        android:text="Attribute Value"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+1 errors, 79 warnings

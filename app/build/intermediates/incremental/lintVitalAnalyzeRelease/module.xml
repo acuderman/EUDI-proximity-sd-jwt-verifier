@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="/Users/andrazcuderman/Work/hack/EUDIVerifierAndroid/app"
+    name=":app"
+    type="APP"
+    maven="EUDI Verifier:app:"
+    agpVersion="8.1.2"
+    buildFolder="build"
+    bootClassPath="/Users/andrazcuderman/Library/Android/sdk/platforms/android-34/android.jar:/Users/andrazcuderman/Library/Android/sdk/build-tools/33.0.1/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

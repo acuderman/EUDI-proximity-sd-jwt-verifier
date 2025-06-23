@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.eudi.verifier.app-mergeDebugResources-43:/layout/activity_verification_result.xml",
+        "source": "com.eudi.verifier.app-main-46:/layout/activity_verification_result.xml"
+    },
+    {
+        "merged": "com.eudi.verifier.app-mergeDebugResources-43:/layout/item_credential_attribute.xml",
+        "source": "com.eudi.verifier.app-main-46:/layout/item_credential_attribute.xml"
+    },
+    {
+        "merged": "/Users/andrazcuderman/.gradle/daemon/8.12/com.eudi.verifier.app-mergeDebugResources-43:/layout/activity_verification_result.xml",
+        "source": "/Users/andrazcuderman/.gradle/daemon/8.12/com.eudi.verifier.app-main-46:/layout/activity_verification_result.xml"
+    },
+    {
+        "merged": "/Users/andrazcuderman/.gradle/daemon/8.12/com.eudi.verifier.app-mergeDebugResources-43:/layout/activity_main.xml",
+        "source": "/Users/andrazcuderman/.gradle/daemon/8.12/com.eudi.verifier.app-main-46:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/andrazcuderman/.gradle/daemon/8.12/com.eudi.verifier.app-mergeDebugResources-43:/layout/activity_qr_scan.xml",
+        "source": "/Users/andrazcuderman/.gradle/daemon/8.12/com.eudi.verifier.app-main-46:/layout/activity_qr_scan.xml"
+    },
+    {
+        "merged": "com.eudi.verifier.app-mergeDebugResources-43:/layout/activity_main.xml",
+        "source": "com.eudi.verifier.app-main-46:/layout/activity_main.xml"
+    }
+]
